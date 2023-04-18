@@ -1,0 +1,4 @@
+# Fetch all task
+
+GET http://localhost:3001/tasks
+Content-type:application/json
