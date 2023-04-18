@@ -1,9 +1,13 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import { DataSource } from "typeorm";
+import cors from "cors";
 
 const app: Express = express();
 dotenv.config();
+
+app.use(express.json());
+app.use(cors());
 
 // create Database Connection
 export const AppDataSource = new DataSource({
