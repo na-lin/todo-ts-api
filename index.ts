@@ -34,4 +34,4 @@ app.listen(process.env.PORT, () => {
   console.log("Listen on port 3001");
 });
 
-app.use("/task", tasksRouter);
+app.use("/tasks", tasksRouter);
