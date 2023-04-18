@@ -1,6 +1,5 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
-import "reflect-metadata";
 import { DataSource } from "typeorm";
 
 const app: Express = express();
