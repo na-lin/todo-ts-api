@@ -1,4 +1,16 @@
 # Fetch all task
-
 GET http://localhost:3001/tasks
 Content-type:application/json
+
+
+# Create a new task
+POST http://localhost:3001/tasks
+Content-type: application/json
+# request body
+{
+  "title":" Mololor sit amet",
+  "date": "2023-04-19T12:00:00Z",
+  "description":"Description of task",
+  "priority":"high",
+  "status":"todo"
+}
